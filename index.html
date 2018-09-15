@@ -1,53 +1,197 @@
 <!DOCTYPE html>
-
-<!-- CSS Stylesheets with Relative Paths -->
-
 <html lang="en-us">
-<head>
-  <meta charset="UTF-8">
-  <title>CSS Stylesheets with Relative Paths</title>
 
-  <!-- This line is money! It points your HTML to the CSS file. -->
-  <!-- Notice the "relative" pathway? It matches a file inside our current directory's "assets" folder. Open it to see our style rules. -->
-  <!--<link rel="stylesheet" type="text/css" href="style.css">-->
+<head>
+
+  <meta charset="UTF-8">
+  <title>Web Homework (rbk)</title>
+
+  <!-- Bring in our bootstrap stylesheet -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <!-- <link rel="stylesheet" href="style.css"> -->
 </head>
 
 <body>
+  <!-- Page Title-->
+  <h1>Web Homework</br> <small>Rebecca Kalhorn</small></h1>
+  
+  <!-- Nav Bar-->
+  
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">St. Louis <br/>5 year Crime Analysis</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
-  <header>
-    <h1>Student Bio</h1>
-  </header>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">Disabled</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+  
+  
+  
+  
+  
+  
+  
+  <!-- Our rows function in containers (grid created). -->
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <div class="container">
 
-  <main class="container">
-    <section id="main-bio">
-      <section id="figure">
-        <h2 id="bio-name">Rebecca Kalhorn, Ph.D.</h2>
-        <img id="bio-image" src="https://media.licdn.com/dms/image/C4D03AQH2m2mfmzRI2A/profile-displayphoto-shrink_200_200/0?e=1541635200&v=beta&t=sJQfOmIwe47uxLyXjOsR4DsFjd9wN3Rxu2zUznYS68Q" alt="Rebecca Kalhorn, Ph.D.">
+    <!-- Our columns function in rows. -->
+    <div class="row">
 
-      </section>
-      <p> I am a detail-oriented problem-solver with 15 years in the education field, 
-        earning my PhD in mathematics, coding for an online instructional tool, and 
-        teaching mathematics and statistics at both the collegiate and high school levels, 
-        where I have been recognized for my work (Granted the Joseph B. Whitehead Educator 
-        of Distinction Award - 2018, peer recognized teaching award - 2018, and outstanding 
-        TA - 2009). As chair of Priory's mathematics department, I have also lead/initiated 
-        several projects including restructuring the mathematics curriculum, establishing 
-        an inter-high school mathematics department gathering and idea exchange, and 
-        co-leading Priory's 2018 reaccreditation. All this in addition to sharing my passion 
-        for the technical language of mathematics and statistics, critical thinking, and 
-        problem-solving with my students. </p>
-    </section>
+      <!-- Columns have 12 areas of width to work with. -->
 
-    <aside id="contact-info">
-      <h2>Contact Info</h2>
-      <ul>
-        <li><strong>Email:</strong> <a href="#">rkalhorn@gmail.com</a></li>
-        <li><strong>Github:</strong> <a href="https://github.com/rkalhorn">rkalhorn</a></li>
-        <li><strong>Linkedin:</strong> <a href="https://www.linkedin.com/in/rebecca-kalhorn-59040513/">rkalhorn</a></li>
-        <li><strong>Portfolio:</strong> <a href="#">coming soon</a></li>
-      </ul>
-    </aside>
-  </main>
+      <!-- One third of screen (4/12) -->
+      <div class="col-md-4">
+        <!-- This is column 1 of 3 -->
+      </div>
+
+      <!-- One third of screen (4/12) -->
+      <div class="col-md-4">
+        <!-- This is column 2 of 3 -->
+      </div>
+
+      <!-- One third of screen (4/12) -->
+      <div class="col-md-4">
+
+        <!-- This is column 3 of 3 -->
+      </div>
+
+      <!-- Columns float left, so all adjacent rows will appear next to each other (as long as not all space gets taken up) -->
+    </div>
+
+  </div>
+
+
+  <!-- Creates the Overall Grid -->
+  <div class="container">
+
+    <!-- First Row -->
+    <div class="row">
+
+      <!-- First (and only column) -->
+      <div class="col-md-12">
+        <h1>I'm a size 12 column. I am the only column on my row. I stretch the entire width. And keep going.</h1>
+      </div>
+    </div>
+
+    <!-- Second Row -->
+    <div class="row">
+
+      <!-- First of two columns -->
+      <div class="col-md-6">
+        <h1>I'm a size 6 column. I take up half a 12 column row</h1>
+      </div>
+
+      <!-- Second of two columns -->
+      <div class="col-md-6">
+        <h1>I'm a size 6 column. I take up half a 12 column row</h1>
+      </div>
+    </div>
+
+    <!--Third Row-->
+    <div class="row">
+      <!--First of Two Columns-->
+      <div class="col-md-8">
+        <h1>Columns don't need to be the same size. I'm a size 8 column.</h1>
+      </div>
+      <!--Second of Two Columns-->
+      <div class="col-md-4">
+        <h1>They just need to fill 12 columns or less per row. I'm a 4 column.</h1>
+      </div>
+    </div>
+
+    <!--Fourth Row-->
+    <div class="row">
+      <!--First and Only Column in this Row-->
+      <div class="col-md-6">
+        <h1>We can leave part of a row blank, by just not filling it up. I'm a size 6 column</h1>
+      </div>
+    </div>
+
+    <!--Fifth Row-->
+    <div class="row">
+      <!--First and Only Column in this Row-->
+      <!--Notice how we offset this column by 6-->
+      <div class="col-md-offset-6 col-md-6">
+        <h1>We can also offset a column if we want. I'm a size 6 column, offset by 6 columns</h1>
+      </div>
+    </div>
+
+    <!--Sixth Row-->
+    <div class="row">
+      <!--First and Only Column in this Row-->
+      <div class="col-md-12">
+        <h1>The important things to remember are these:</h1>
+        <h3>1. Columns go inside rows. <small>container &gt; row &gt; column</small></h3>
+        <h3>2. Only 12 columns or less per row.</h3>
+        <h3>3. Rows go inside containers.</h3>
+        <h3>4. Don't try and change the grid.</h3>
+      </div>
+    </div>
+
+    <!--Seventh Row-->
+    <div class="row">
+      <!--First Column in this Row-->
+      <div class="col-md-6">
+        <div class="box">
+          <h1>If you want to change an element inside the grid, then add CSS to the element inside the grid. Not the grid itself.</h1>
+        </div>
+      </div>
+
+      <!--Second Column in this Row-->
+      <div class="col-md-6">
+        <div class="box">
+          <h1>Adding CSS directly to the grid will probably break things elsewhere, as that isn't the intended usage.</h1>
+        </div>
+      </div>
+    </div>
+
+    <!--Eighth Row-->
+    <div class="row">
+      <!--First and Only Column in this Row-->
+      <div class="col-md-12">
+        <h1>Using Bootstrap doesn't mean we're never writing CSS again.</h1>
+        <h1>But we can build websites much faster without having to write <strong><i>ALL</i></strong> of the CSS ourselves.</h1>
+      </div>
+    </div>
+
+  </div>
 
 </body>
 
