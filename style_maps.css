@@ -1,24 +1,16 @@
-.header img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 75%;
-  height: 75%;
-  background-color:  #588BAE;
-  padding: 0px 0px 0px 0px;
-}
-
-.header h1 {
+header {
   text-align: center; 
-  background-color: #588BAE;
   padding: 20px 0px 20px 0px;
-  border-bottom: solid darkgrey;
+  background-image: url(/Images/maps.png);
 }
  
 p{
   padding: 0px 10px 0px 10px; 
 }
 
+nav{
+    padding:10px 0px 10px 0px;
+}
 .navbar-brand {
   text-align: center;
 }
