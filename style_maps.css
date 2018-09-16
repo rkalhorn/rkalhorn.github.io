@@ -16,6 +16,11 @@ nav{
   text-align: center;
 }
 
+div div div img {
+    width: 75%;
+    height: 75%;
+}
+
 nav ul li { 
   list-style:none;
   margin:10px;
