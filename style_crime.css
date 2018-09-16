@@ -2,23 +2,23 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 75%;
-  height: 75%;
-  background-color:  #588BAE;
-  padding: 0px 0px 0px 0px;
+  width: 100%;
+  height: 100%;
+  padding: 20px 20px 20px 20px;
 }
 
 .header h1 {
   text-align: center; 
-  background-color: #588BAE;
-  padding: 0px 0px 20px 0px;
-  border-bottom: solid darkgrey;
+  padding: 20px 0px 20px 0px;
 }
  
 p{
   padding: 0px 10px 0px 10px; 
 }
 
+nav{
+    padding:10px 0px 10px 0px;
+}
 .navbar-brand {
   text-align: center;
 }
