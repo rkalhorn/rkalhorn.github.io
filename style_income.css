@@ -3,6 +3,11 @@
   padding: 20px 0px 20px 0px;
   background-image: url('/Images/income.jpg');
   background-position: center;
+  text-shadow:
+  -1px -1px 0 white,
+  1px -1px 0 white,
+  -1px 1px 0 white,
+  1px 1px 0 white;
 }
  
 p{
