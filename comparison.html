@@ -1,35 +1,22 @@
 <!DOCTYPE html>
 <html lang="en-us">
     <head>
-            <title>Web Homework Crime Rebecca Kalhorn</title>
+            <title>Web Homework Rebecca Kalhorn</title>
             <meta charset="utf-8">
             <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
             <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
             <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-            <link rel="stylesheet" href="style_crime.css">
+            <link rel="stylesheet" href="/style.css" type="text/css">
     </head>
 
 <body>
   <!-- Page Title-->
   <div class="header" text-align:center>
-    <div class="row content">
-        <div class="col-sm-1 text-left ">
-        </div>
-        <div class="col-sm-2 text-center ">
-            <img src="/Images/police_seal.png" alt="police"/>
-        </div>
-        <div class="col-sm-6 text-center ">
-            <h1>  Exploring St. Louis Crime</br>by Neighborhood and Zip Code</h1>
-        </div>
-        <div class="col-sm-2 text-center ">
-            <img src="/Images/st_louis_seal.png" alt="stl"/> 
-        </div>
-        <div class="col-sm-1 text-right ">
-        </div>
-    </div>
-  </div>
+    <img src="/Images/arch4.png" alt="arch4"/>
+  <h1>  Exploring St. Louis</br>by Neighborhood and Zip Code</h1>
+</div>
 
- <hr>
+ 
   <!-- Nav Bar-->
   
   
@@ -62,44 +49,13 @@
 
 <div class="container-fluid">
     <div class="row content">
-      <div class="col-sm-12 text-center ">
- 
-            <h3> Crime Count By Neighborhood</h3>
-            <img src="/plots/crimeCount.png" style='width:100%'; alt="Crime Count By ngbhd"/>      
-      </div>
-    </div>
-    <div class="row content">
-        <div class="col-sm-6 text-center ">
-            <h3> Relative Crime (relative to population) By Neighborhood</h3>
+        <div class="col-sm-6 text-left ">
+            <h5>Population Map by Zip Code</h5>
+            <img src="/plots/populationMaps.png" style='width:100%'; alt="Population"/>
         </div>
-        <div class="col-sm-6 text-center ">
-            <h3> Relative Crime (relative to population) Without Kosciusko By Neighborhood</h3>
-            <p>Kosciusko is downtown - you would expect there to be higher crime to population since many
-                people visit downtown who do not live there.
-            </p>
-        </div>
-    </div>
-</br>
-</br>
-    <div class="row content">
-            <div class="col-sm-6 text-center ">
-                <img src="/plots/relCrime.png" style='width:100%'; alt="Relative Crime By ngbhd"/>      
-            </div>
-            <div class="col-sm-6 text-center ">
-                <img src="/plots/relCrimewoKosciusko.png" style='width:100%'; alt="Relative Crime By ngbhd w/o downtown"/>      
-            </div>
-        </div>
-</br>
-</br>    
-    <div class="row content">
-        <div class="col-sm-6 text-center ">
-   
-            <h3> Crime Count By Zip Code</h3>
-            <img src="/plots/zipCrimeCount.png" style='width:100%'; alt="Crime Count By Zip"/>      
-        </div>
-        <div class="col-sm-6 text-center ">
-            <h3> Relative Crime (relative to population) By Zip Code</h3>
-            <img src="/plots/relZipCrime.png" style='width:100%'; alt="Relative Crime By Zip"/>      
+        <div class="col-sm-6 text-center">
+            <h5>Average of Median Tract Income by Zip Code Map</h5>
+            <img src="/plots/incomeMap.png" style='width:100%'; alt="income"/> 
         </div>
     </div>
 </div>
