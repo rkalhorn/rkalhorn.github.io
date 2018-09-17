@@ -62,31 +62,37 @@
 
 <div class="container-fluid">
     <div class="row content">
-      <div class="col-sm-8 text-left ">
+      <div class="col-sm-4 text-center ">
  
-            <p> Project Overview: </br> </br> St. Louis, somewhat uniquely, is a city of neighborhoods. Each neighborhood in St. Louis has <a href https://explorestlouis.com/things-to-do/neighborhoods/>distinct characteristics</a>. This was the spark for our group project. We decided that we wanted to try and characterize some of the characteristics of St. Louis neighborhoods. We looked at population, <a href = https://roricooper.github.io/> education</a>, businesses, crime, and income.</p>
-<p> Complications:
-  <ul>
-  <li>The data we found was categorized in different ways - neighborhoods, census tracts, and zip codes. So, we had to explore how all these ways of parsing the land of St. Louis city were related. </li>
-  <li>We focused on counts, although you will find some relative crime illustrations. </li>
-    <li> <a href= https://www.youtube.com/watch?v=sxYrzzy3cq8&vl=en>Lurking Variables</a>: There are so many other variables that could be considered for the items we are looking at. For example, for our school data we did not consider private schools or the area that the students of each school lived, only the location of the school. For the crime data, there could be many lurking variables. Population size should be considered (we look at crime relative to population). Locations of large events such as concerts, fairs, and sporting events should also be considered. If there are more people coming to an area you expect there to be more crime just because there are more people. These are just a couple of examples of why our exploration is just the beginning and much more would need to be done to make any truly meaningful observation. </li>
-</ul> 
-<p>Check out the links for more information on our project.</p>
-    </br>
-            
+            <h3> Crime Count By Neighborhood</h3>
+            <img src="/plots/crimeCount.png" style='width:100%'; alt="Crime Count By ngbhd"/>      
       </div>
-      <div class="col-sm-4 text-center">
-        <img src="st_louis_map.jpg" alt="St. Louis nbhd map"/>      
+      <div class="col-sm-4 text-center ">
+ 
+            <h3> Relative Crime (relative to population) By Neighborhood</h3>
+            <img src="/plots/relCrime.png" style='width:100%'; alt="Relative Crime By ngbhd"/>      
+      </div>
+      <div class="col-sm-4 text-center ">
+ 
+            <h3> Relative Crime (relative to population) Without Kosciusko By Neighborhood</h3>
+            <p>Kosciusko is downtown - you would expect there to be higher crime to population since many
+                people visit downtown who do not live there.
+            </p>
+            <img src="/plots/relCrimewoKosciusko.png" style='width:100%'; alt="Relative Crime By ngbhd w/o downtown"/>      
       </div>
   </div>
   <div class="row content">
-    <div class="col-sm-12 text-center ">
-      <p>This page designed by <a href = https://github.com/rkalhorn/>Rebecca Kalhorn</a>.</br> 
-        Project Teammates: <a href= https://github.com/roricooper/>Rori Cooper</a> and <a href= https://github.com/rajeshsikka/>Rajesh Sikka</a> </p>
-</div>
-<div>
-<div>
-
+        <div class="col-sm-6 text-center ">
+   
+              <h3> Crime Count By Zip Code</h3>
+              <img src="/plots/zipCrimeCount.png" style='width:100%'; alt="Crime Count By Zip"/>      
+        </div>
+        <div class="col-sm-6 text-center ">
+   
+              <h3> Relative Crime (relative to population) By Zip Code</h3>
+              <img src="/plots/relZipCrime.png" style='width:100%'; alt="Relative Crime By Zip"/>      
+        </div>
+    </div>
 </div>
 
 
