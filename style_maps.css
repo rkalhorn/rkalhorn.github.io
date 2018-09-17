@@ -9,16 +9,18 @@ p{
   padding: 0px 10px 0px 10px; 
 }
 
+.img-responsive { 
+    display: block;
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+}
+
 nav{
     padding:10px 0px 10px 0px;
 }
 .navbar-brand {
   text-align: center;
-}
-
-div div div img {
-    width: 75%;
-    height: 75%;
 }
 
 nav ul li { 
