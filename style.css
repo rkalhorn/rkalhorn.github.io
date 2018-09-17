@@ -49,43 +49,30 @@ hr {
   height: 1px;
 }
 
-/* On small screens, set height to 'auto' for the grid */
+@media screen and (max-width: 600px) {
+  nav[role="custom-dropdown"] {
+    ul {
+      display: none;
+      height: 100%;
+    }
 
-You can change the collapse point in 3.1 like this..
+    label {
+      position: relative;
+      display: block;
+      width: 100%;
+    }
 
-@media (max-width: 767px) {
-    .navbar-header {
-        float: none;
+    label:after {
+        position: absolute;
+        content: "\2261";
     }
-    .navbar-left,.navbar-right {
-        float: none !important;
+    
+    input:checked ~ ul {
+      display: block;
+    
+      > li {
+        width: 100%;
+      }        
     }
-    .navbar-toggle {
-        display: block;
-    }
-    .navbar-collapse {
-        border-top: 1px solid transparent;
-        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
-    }
-    .navbar-fixed-top {
-        top: 0;
-        border-width: 0 0 1px;
-    }
-    .navbar-collapse.collapse {
-        display: none!important;
-    }
-    .navbar-nav {
-        float: none!important;
-        margin-top: 7.5px;
-    }
-    .navbar-nav>li {
-        float: none;
-    }
-    .navbar-nav>li>a {
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
-    .collapse.in{
-        display:block !important;
-    }
+  }
 }

@@ -49,7 +49,30 @@ hr {
   height: 1px;
 }
 
-/* On small screens, set height to 'auto' for the grid */
-@media screen and (max-width: 767px) {
-  .row.content {height: auto;}
+@media screen and (max-width: 600px) {
+  nav[role="custom-dropdown"] {
+    ul {
+      display: none;
+      height: 100%;
+    }
+
+    label {
+      position: relative;
+      display: block;
+      width: 100%;
+    }
+
+    label:after {
+        position: absolute;
+        content: "\2261";
+    }
+    
+    input:checked ~ ul {
+      display: block;
+    
+      > li {
+        width: 100%;
+      }        
+    }
+  }
 }
